@@ -5,37 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="java.js">
-    <title>INTERAÇÃO JAVA</title>
+    <title>aula java 02</title>
 </head>
 <body>
-    <h1>Primeira Interação java:janela pop up</h1>
+    <!--calculadora passo a passo -->
+    <h1>Calculadora de Gotejamento</h1>
 
-    <button id="pri"> Clique aqui</button>
+    <h2>O cálculo de medicação e gotejamento de soro é o procedimento necessário para garantir a administração por via endovenosa dos medicamentos e demais volumes prescritos pela equipe médica na quantidade correta e pelo período de tempo adequado.
+    </h2>
+    
+    <button id="chato" onclick="abrir('popup.html')">abrir</button>
 
-    <dialog>
-
-        <h2>CALCULADORA</h2>
-            <h1>Notas do aluno</h1>
-            <div class="not">
-                <input type="number" placeholder="nota 1" id="nota1">
-            </div>
-            <div class="not">
-                <input type="number" placeholder="nota 2" id="nota2">
-            </div>
-            <div class="not">
-                <input type="number" placeholder="nota 3" id="nota3">
-            </div>
-            
-
-        <button onclick="calcular()" class="calc">Calcular</button><BR>
-        <p id="resultado" class="resultado"></p>
-
-        <button id="Fechar">Fechar</button>
-
-    </dialog>
-    <script src="java.js"></script>
-   
-   
+    <script>
+        function abrir (url){
+            window.open(url,'width=400,heigth=500,top=100,left=699',
+            'scrollbars=no, status=no,toolbar=no,location=no,menubar=no,resizable=no,fullscreen=no');
+        }
+    </script>
+    
 </body>
 </html>

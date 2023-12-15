@@ -1,32 +1,31 @@
-dialog::backdrop{
-    background-color: rgb(0 0 0/.5);
-}
-dialog {
-    border:none;
-    border-radius: 3rem;
-    box-shadow:0 0 1em rgb(0 0 0/.3);
-    width:400px;
-    height: 500px;
-    background-color: #96b6f6;
+*{
+    margin: 0%;
+    padding:0%;
     text-align: center;
-
-
 }
 body{
-    background-color: #d4b4f2;
+    background-image: url('qua.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+h1{
     text-align: center;
 }
-#pri{
-    align-items: center;
-    width: 8rem;
-    height: 3rem;
-    border-radius: 1rem;
-    background-color: #b1f1f1;
-    
+
+
+h2{
+    background-color: hsl(200, 9%, 81%);
+    border-radius: 1vh;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    text-align: justify;
+    height: 20vh;
 }
 button{
-    width:4rem;
-    height:2rem;
+    width: 10vh;
+    background-color: aquamarine;
+    height: 5vh;
     border-radius: 10px;
-    background-color: #76dcb4;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sty.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Calculando o Gotejamento de um Soro</h3>
+    <h4>Inserir valores</h4>
+    <p>Volume/ml=<input id="nota1" type="number"><br/></p>
+    <p>tempo/min= <input id="nota2" type="number"><br/></p>
+    <!-- <p>Digite a Terceira  Nota3: <input id="nota3" type="number"><br/></p> -->
+    <button onclick="media()">Calcular Gotejamento</button>
+    <h4 id="soma">Numero de gotas/min</h4>
+    <!-- <h4 id="media">Media dos valores</h4> -->
+
+    <script>
+        function media(){
+            var num1 = parseFloat(document.getElementById("nota1").value);
+            var num2 = parseFloat(document.getElementById("nota2").value);
+            // var num3 = parseFloat(document.getElementById("nota3").value);
+            var soma=((num1*20)/num2);
+            var media=(soma/3);
+            document.getElementById("soma").innerHTML = (" O Número de Gotas por minuto é = " + soma);
+            // document.getElementById("media").innerHTML = (" a media e = " + media);
+        }
+        
+    
+    </script>
+</body>
+</html>
